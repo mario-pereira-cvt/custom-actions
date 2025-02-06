@@ -12,7 +12,7 @@ jobs:
       - name: Load and cache dependencies
         uses: ./.github/actions/cached-deps
         with:
-          cache-name: deps-node-modules
+          caching: 'false'
   test:
     runs-on: ubuntu-latest
     steps:
